@@ -24,7 +24,7 @@ ShoppingBag,
 
     <div class="w-full min-h-screen bg-white">
       <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between">
           <div class="flex items-center">
               <a href="/" class="flex items-center space-x-2">
                 <ShoppingBag className="w-8 h-8 text-green-600" />
@@ -40,7 +40,7 @@ ShoppingBag,
         </div>
       </header>
       <main class="pt-24">
-        <section class="max-w-7xl mx-auto px-4 py-16 text-center" id="hero">
+        <section class="max-w-[1440px] mx-auto px-4 py-16 text-center" id="hero">
           <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Find It Fast, Buy It Now – Never Miss Out Again!
           </h1>
@@ -62,7 +62,7 @@ ShoppingBag,
           </div>
         </section>
         <section class="bg-gray-50 py-16">
-          <div class="max-w-7xl mx-auto px-4">
+          <div class="max-w-[1440px] mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto">
               <h2 class="text-3xl font-bold mb-6">
                 The Shopping Problem We Solve
@@ -99,7 +99,7 @@ ShoppingBag,
           </div>
         </section>
         <section class="py-16">
-          <div class="max-w-7xl mx-auto px-4">
+          <div class="max-w-[1440px] mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">
               How FindItBuyIt Works
             </h2>
@@ -135,7 +135,7 @@ ShoppingBag,
           </div>
         </section>
         <section class="bg-gray-50 py-16">
-          <div class="max-w-7xl mx-auto px-4">
+          <div class="max-w-[1440px] mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">
               Powerful Features You'll Love
             </h2>
@@ -178,7 +178,7 @@ ShoppingBag,
           </div>
         </section>
         <section class="py-16">
-          <div class="max-w-7xl mx-auto px-4">
+          <div class="max-w-[1440px] mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
                 <div class="text-4xl font-bold text-green-600 mb-2">
@@ -239,7 +239,7 @@ ShoppingBag,
           </div>
         </section>
         <section class="py-16 bg-green-50">
-          <div class="max-w-7xl mx-auto px-4 text-center">
+          <div class="max-w-[1440px] mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Stay Updated</h2>
             <p class="text-xl text-gray-600 mb-8">
               Get notified when we launch and receive exclusive early-access
@@ -258,7 +258,7 @@ ShoppingBag,
           </div>
         </section>
         <footer class="bg-white border-t border-gray-200 py-12">
-          <div class="max-w-7xl mx-auto px-4">
+          <div class="max-w-[1440px] mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
                 <img
@@ -330,19 +330,18 @@ ShoppingBag,
 
 
 <script>
-  const waitlistButton = document.getElementById("waitlist-button")
-    const waitlist = document.getElementById("waitlist")
 
+  const waitlistButton = document.getElementById("waitlist-button");
+const waitlist = document.getElementById("waitlist");
 
-  waitlistButton?.addEventListener("click", () => {
-window.scrollTo({
+waitlistButton?.addEventListener("click", () => {
+    window.scrollTo({
         top: 0,
-        behavior: 'smooth' 
-    }); 
-      setTimeout(() => {
-        waitlist?.focus();
-    }, 500); 
-   }) 
-  
+        behavior: 'smooth'
+    });
+        waitlist?.focus({ preventScroll: true }); 
+
+});
+
     
 </script>
