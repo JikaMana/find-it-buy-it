@@ -5,105 +5,20 @@ import {
   Search,
   MapPin,
   Store,
-  Bell,
-  CheckCircle2,
-  ChevronDown,
-  Zap,
-  DollarSign,
-  Clock,
-  ShoppingCart,
-  Map,
-  Smartphone,
-  Heart,
-ArrowRight,
-ShoppingBag,
 } from 'lucide-react';
+import Hero from './Hero.astro';
+import Solutions from './Solutions.astro';
+import Features from './Features.astro';
+import Questions from './Questions.astro';
+
 
 ---
 
 
     <div class="w-full min-h-screen bg-white">
-      <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-        <div class="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between">
-          <div class="flex items-center">
-              <a href="/" class="flex items-center space-x-2">
-                <ShoppingBag className="w-8 h-8 text-green-600" />
-                <span class="text-xl font-bold text-gray-900">
-                  FindItBuyIt
-                </span>
-              </a>
-            </div>
-            <button class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors" id="waitlist-button">
-            Join Waitlist
-          </button>
-          
-        </div>
-      </header>
       <main class="pt-24">
-        <section class="max-w-[1440px] mx-auto px-4 py-16 text-center" id="hero">
-          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Find It Fast, Buy It Now 
-          </h1>
-       
-           <h1 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Stop Running from Store to Store – Find What You Need Instantly!</h1>
-        <p class="text-lg md:text-xl font-medium text-gray-700 mb-6 md:mb-12">
-            Tired of running from store to store, only to find out what you need is out of stock? We’ve got you covered!  
-            With <strong>FindItBuyIt</strong>, you can instantly check product availability across multiple stores near you.  
-            No more guesswork, no more wasted trips—just quick, easy, and reliable shopping at your fingertips.
-        </p>
-        
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 mt-6 sm:mt-12">
-            <input
-            id="waitlist"
-              type="email"
-              placeholder="Enter your email"
-              class="w-full sm:w-80 px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <button class="w-full sm:w-auto bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
-              Join Waitlist 
-			  <ArrowRight className="w-5 h-5" />
-            </button>
-          </div> 
-        <p class="text-lg sm:text-xl text-gray-700 mb-12">Join plenty sharp shoppers wey no dey waste time and motor spirit, no stress, just buy easy!</p>
-
-        </section>
-        <section class="bg-gray-50 py-16">
-          <div class="max-w-[1440px] mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto">
-              <h2 class="text-3xl font-bold mb-6">
-                The Shopping Problem We Solve
-              </h2>
-              <p class="text-xl text-gray-600 mb-8">
-                Tired of visiting multiple stores only to find out the product
-                you want is out of stock? Frustrated with wasting time and fuel?
-                FindItBuyIt is your solution.
-              </p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
-              <div class="bg-white p-6 rounded-xl shadow-sm">
-                <Clock className="w-10 h-10 text-green-600 mb-4" />
-                <h3 class="text-xl font-semibold mb-2">Save Time</h3>
-                <p class="text-gray-600">
-                  No more running around town searching for products
-                </p>
-              </div>
-              <div class="bg-white p-6 rounded-xl shadow-sm">
-                <DollarSign className="w-10 h-10 text-green-600 mb-4" />
-                <h3 class="text-xl font-semibold mb-2">Save Money</h3>
-                <p class="text-gray-600">
-                  Compare prices instantly across multiple stores
-                </p>
-              </div>
-              <div class="bg-white p-6 rounded-xl shadow-sm">
-                <Zap className="w-10 h-10 text-green-600 mb-4" />
-                <h3 class="text-xl font-semibold mb-2">Shop Smarter</h3>
-                <p class="text-gray-600">
-                  Real-time inventory updates and price alerts
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero />
+        <Solutions />
         <section class="py-16">
           <div class="max-w-[1440px] mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">
@@ -140,67 +55,7 @@ ShoppingBag,
             </div>
           </div>
         </section>
-        <section class="bg-gray-50 py-16">
-          <div class="max-w-[1440px] mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">
-              Powerful Features You'll Love
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              
-              <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Map className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 class="font-semibold mb-2">Store Navigation</h3>
-                <p class="text-gray-600">
-                  Get directions to the nearest store
-                </p>
-              </div>
-              <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <ShoppingCart className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 class="font-semibold mb-2">Price Comparison</h3>
-                <p class="text-gray-600">Find the best deals instantly</p>
-              </div>
-              <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Bell className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 class="font-semibold mb-2">Discount Deals Alert</h3>
-                <p class="text-gray-600">
-                  Get notified when stores are offering discounts
-                </p>
-              </div>
-              <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Smartphone className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 class="font-semibold mb-2">Mobile App</h3>
-                <p class="text-gray-600">
-                  Shop on the go with our mobile app
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="max-w-[1440px] mx-auto px-4 mt-8">
-            <h2 class="text-3xl font-bold text-center mb-12">
-              Premium Features to level your game
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              <div class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow">
-                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Bell className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 class="font-semibold mb-2">Real-Time Alerts</h3>
-                <p class="text-gray-600">
-                  Get notified when items are back in stock
-                </p>
-              </div>
-            
-            </div>
-          </div>
-        </section>
+       <Features />
         <section class="py-16">
           <div class="max-w-[1440px] mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -231,45 +86,7 @@ ShoppingBag,
             </div>
           </div>
         </section>
-        <section class="bg-gray-50 py-16">
-          <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">
-              Frequently Asked Questions
-            </h2>
-            <div class="space-y-4">
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">
-                    How does FindItBuyIt work?
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">Is it free to use?</span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-               <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">
-                    What state does FindItBuyIt operate?
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">
-                    Which stores are supported?
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+       <Questions />
         <section class="py-16 bg-green-50">
           <div class="max-w-[1440px] mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Stay Updated</h2>
@@ -289,91 +106,9 @@ ShoppingBag,
             </div>
           </div>
         </section>
-        <footer class="bg-white border-t border-gray-200 py-12">
-          <div class="max-w-[1440px] mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div>
-                <img
-                  src="https://mirrorful-production.s3.us-west-1.amazonaws.com/patterns/files/73c20899-7f4e-41bb-a857-8ee8012107dd/FindItBuyItLogo.png"
-                  alt="FindItBuyIt Logo"
-                  class="h-8 mb-4"
-                />
-                <p class="text-gray-600">Shop smarter, faster, better.</p>
-              </div>
-              <div>
-                <h3 class="font-semibold mb-4">Company</h3>
-                <ul class="space-y-2">
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-green-600">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-green-600">
-                      Careers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-green-600">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 class="font-semibold mb-4">Legal</h3>
-                <ul class="space-y-2">
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-green-600">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-600 hover:text-green-600">
-                      Terms of Service
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 class="font-semibold mb-4">Follow Us</h3>
-                <div class="flex space-x-4">
-                  <a href="#" class="text-gray-600 hover:text-green-600">
-                    Twitter
-                  </a>
-                  <a href="#" class="text-gray-600 hover:text-green-600">
-                    LinkedIn
-                  </a>
-                  <a href="#" class="text-gray-600 hover:text-green-600">
-                    Instagram
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="mt-8 pt-8 border-t border-gray-200 text-center text-gray-600">
-              <p>&copy; 2025 FindItBuyIt. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
       </main>
     </div>
 
 
 
 
-<script>
-
-  const waitlistButton = document.getElementById("waitlist-button");
-const waitlist = document.getElementById("waitlist");
-
-waitlistButton?.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-        waitlist?.focus({ preventScroll: true }); 
-
-});
-
-    
-</script>

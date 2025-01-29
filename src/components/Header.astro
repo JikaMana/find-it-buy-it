@@ -1,0 +1,38 @@
+---
+import { ShoppingBag } from "lucide-react";  
+---
+  
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between">
+          <div class="flex items-center">
+              <a href="/" class="flex items-center space-x-2 cursor-pointer">
+                <ShoppingBag className="w-8 h-8 text-green-600" />
+                <span class="text-xl font-bold text-gray-900">
+                  FindItBuyIt
+                </span>
+              </a>
+            </div>
+            <button class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors" id="waitlist-button">
+            Join Waitlist
+          </button>
+          
+        </div>
+      </header>
+
+
+      <script>
+
+  const waitlistButton = document.getElementById("waitlist-button");
+const waitlist = document.getElementById("waitlist");
+
+waitlistButton?.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+        waitlist?.focus({ preventScroll: true }); 
+
+});
+
+    
+</script>
