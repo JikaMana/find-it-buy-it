@@ -1,21 +1,16 @@
 ---
 import Image from "astro/components/Image.astro";
 
+const FindItBuyItLogo = "https://mirrorful-production.s3.us-west-1.amazonaws.com/patterns/files/73c20899-7f4e-41bb-a857-8ee8012107dd/FindItBuyItLogo.png"
+
 ---
 
    <footer class="bg-white border-t border-gray-200 py-12">
           <div class="max-w-[1440px] mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
-                <img
-                  src="https://mirrorful-production.s3.us-west-1.amazonaws.com/patterns/files/73c20899-7f4e-41bb-a857-8ee8012107dd/FindItBuyItLogo.png"
-                  alt="FindItBuyIt Logo"
-                  class="h-8 mb-4"
-                />
-                <!-- <Image
-                src="https://mirrorful-production.s3.us-west-1.amazonaws.com/patterns/files/73c20899-7f4e-41bb-a857-8ee8012107dd/FindItBuyItLogo.png"
-                alt={"FindItBuyIt Logo"}/> -->
-                <p class="text-gray-600">Shop smarter, faster, better.</p>
+                <Image src={FindItBuyItLogo} alt="FindItBuyIt Logo"   width="132" height="132" class="mb-4" />
+                <p class="text-gray-600 text-lg font-medium">Shop smarter, faster, better.</p>
               </div>
               <div>
                 <h3 class="font-semibold mb-4">Company</h3>

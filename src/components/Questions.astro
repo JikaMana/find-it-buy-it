@@ -1,5 +1,5 @@
 ---
-import { ChevronDown } from "lucide-react";
+import FAQSection from "./FAQSection";
  
 ---
  <section class="bg-gray-50 py-16">
@@ -7,37 +7,6 @@ import { ChevronDown } from "lucide-react";
             <h2 class="text-3xl font-bold text-center mb-12">
               Frequently Asked Questions
             </h2>
-            <div class="space-y-4">
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">
-                    How does FindItBuyIt work?
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">Is it free to use?</span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-               <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">
-                    What state does FindItBuyIt operate?
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <button class="w-full flex items-center justify-between text-left">
-                  <span class="font-semibold">
-                    Which stores are supported?
-                  </span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
-                </button>
-              </div>
-            </div>
+          <FAQSection client:load/>
           </div>
         </section>
