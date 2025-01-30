@@ -21,18 +21,15 @@ import { ShoppingBag } from "lucide-react";
 
 
       <script>
+        const waitlistButton = document.getElementById("waitlist-button");
+        const waitlist = document.getElementById("waitlist");
 
-  const waitlistButton = document.getElementById("waitlist-button");
-const waitlist = document.getElementById("waitlist");
+        waitlistButton?.addEventListener("click", () => {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+              waitlist?.focus({ preventScroll: true }); 
 
-waitlistButton?.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-        waitlist?.focus({ preventScroll: true }); 
-
-});
-
-    
-</script>
+        });   
+      </script>
