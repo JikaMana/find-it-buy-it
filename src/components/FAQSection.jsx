@@ -46,9 +46,13 @@ export default function FAQSection() {
               }`}
             />
           </button>
-          {openIndex === index && (
-            <p className="mt-4 text-gray-700">{faq.answer}</p>
-          )}
+
+          <p
+            className={`text-gray-700 transition-all ease-[cubic-bezier(.4,0,.2,1)] duration-100 overflow-hidden
+        ${openIndex === index ? "mt-4 opacity-100" : "max-h-0 opacity-0"}`}
+          >
+            {faq.answer}
+          </p>
         </div>
       ))}
     </div>
