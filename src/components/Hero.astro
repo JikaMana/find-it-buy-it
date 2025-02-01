@@ -1,44 +1,115 @@
 ---
 import { ArrowRight } from "lucide-react";
-import heroBanner from "../assets/herobanner.webp";
+import heroBanner from "../assets/herobanner.webp"; // Consider replacing with a more dynamic image
+import "./Hero.css"
 
 ---
 
-    <section class="relative bg-green-600 px-4 py-16 text-center lg:h-[70vh] grid place-items-center" id="hero">
 
-      <div class="absolute inset-0 overflow-hidden">
-          <img
-            src={heroBanner.src}
-            alt="Shopping background"
-            class="w-full h-full object-cover opacity-10"
+<section class="relative bg-gradient-to-br from-green-700 to-emerald-900 min-h-screen flex items-center justify-center overflow-hidden" id="hero">
+  {/* Animated background elements */}
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+    <img 
+      src={heroBanner.src} 
+      alt="Happy shopping experience" 
+      class="w-full h-full object-cover object-[center_70%] transition-transform duration-1000 ease-out hover:scale-105" 
+    />
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 relative z-10">
+    <div class="text-center space-y-8">
+      {/* Main heading with staggered animation */}
+      <h1 class="hero-animate text-5xl md:text-7xl font-extrabold text-white mb-6 opacity-0">
+        <span class="block mb-4 bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent">
+          Find It Fast, Buy It Now
+        </span>
+        <span class="block text-3xl md:text-5xl font-semibold text-emerald-100">
+        Stop Running from Store to Store – Find What You Need Instantly!
+        </span>
+      </h1>
+
+      {/* Animated subheading */}
+      <p class="hero-animate text-xl md:text-2xl text-emerald-50/90 max-w-3xl mx-auto opacity-0 animation-delay-200">
+        Shop effortlessly with immediate pickup or fast delivery.
+Say goodbye to endless store-hopping—find exactly what's available near you right now.
+
+
+      </p>
+
+      {/* Animated CTA Section */}
+      <div class="cta-animate opacity-0 transform">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="w-full px-6 py-4 rounded-xl border-2 border-green-100/20 bg-white/10 backdrop-blur-sm text-white placeholder-green-100/60 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
           />
+          <button class="w-full max-w-max flex items-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-xl transition-all transform hover:scale-105 hover:shadow-lg">
+            Get Early Access
+            <ArrowRight className="w-5 h-5 mt-0.5" />
+          </button>
         </div>
-          <div class="max-w-7xl mx-auto relative text-center px-4">
-          <h1 class="text-4xl md:text-6xl font-bold text-gray-200  mb-8 md:mb-12">
-            Find It Fast, Buy It Now 
-          </h1>
-       
-           <h1 class="text-2xl md:text-4xl font-bold text-gray-200 sm:mb-6 mb-8">Stop Running from Store to Store – Find What You Need Instantly!</h1>
-        <p class="text-lg md:text-xl font-medium text-gray-300 mb-6 md:mb-12 text-balance">
-            Tired of running from store to store, only to find out what you need is out of stock? We’ve got you covered!  
-            With <strong>FindItBuyIt</strong>, you can instantly check product availability across multiple stores near you.  
-            No more guesswork, no more wasted trips—just quick, easy, and reliable shopping at your fingertips.
-        </p>
         
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 mt-6 sm:mt-12">
-            <input
-            id="waitlist"
-              type="email"
-              placeholder="Enter your email"
-              class="w-full sm:w-80 px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <button class="w-full sm:w-auto bg-white text-green-600 px-8 py-3 rounded-full hover:bg-emerald-900 hover:text-white transition-colors flex items-center justify-center gap-2">
-              Join Waitlist 
-			      <ArrowRight className="w-5 h-5" />
-            </button>
-          </div> 
-        <!-- <p class="text-lg sm:text-xl text-gray-200 mb-12">Join plenty sharp shoppers wey no dey waste time and motor spirit, no stress, just buy easy!</p> -->
+        {/* Trust element */}
+        <p class="mt-6 text-emerald-100/80 text-base md:text-lg">
+        Join plenty sharp shoppers wey no dey waste time and motor spirit, no stress, just buy easy!
+        </p>
+      </div>
+    </div>
+  </div>
 
-          </div>
-          
-        </section>
+  {/* Scrolling indicator */}
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <div class="w-8 h-14 rounded-3xl border-2 border-emerald-100 flex justify-center">
+      <div class="w-1 h-3 bg-emerald-100 rounded-full mt-2"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ---
+
+my own code
+import { ArrowRight } from "lucide-react";
+import heroBanner from "../assets/herobanner.webp";
+
+---
+<section class="relative bg-green-600 px-4 py-16 text-center lg:h-[70vh]" id="hero">
+  <div class="absolute inset-0 overflow-hidden">
+    <img
+      src={heroBanner.src}
+      alt="Shopping background"
+      class="w-full h-full object-cover opacity-10"
+    />
+  </div>
+  <div class="max-w-7xl mx-auto relative text-center px-4 h-full grid place-items-center">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-200 mb-6 md:mb-8">
+        Find It Fast, Buy It Now 
+      </h1>
+      <h1 class="text-2xl md:text-4xl font-bold text-gray-200 mb-6">
+        Stop Running from Store to Store – Find What You Need Instantly!
+      </h1>
+    </div>
+    <div class=" self-end"> 
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+        <input
+          id="waitlist"
+          type="email"
+          placeholder="Enter your email"
+          class="w-full sm:w-80 px-6 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+        <button class="w-full sm:w-auto bg-white text-green-600 px-8 py-3 rounded-full hover:bg-emerald-900 hover:text-white transition-colors flex items-center justify-center gap-2">
+          Join Waitlist 
+          <ArrowRight class="w-5 h-5" />
+        </button>
+      </div> 
+      <p class="text-lg sm:text-xl text-gray-200 mb-4">
+        Join plenty sharp shoppers wey no dey waste time and motor spirit, no stress, just buy easy!
+      </p>
+    </div>
+  </div>
+</section> -->
