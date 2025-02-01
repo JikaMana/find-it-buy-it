@@ -21,10 +21,10 @@ import "./Hero.css"
     <div class="text-center space-y-8">
       {/* Main heading with staggered animation */}
       <h1 class="hero-animate text-5xl md:text-7xl font-extrabold text-white mb-6 opacity-0">
-        <span class="block mb-4 bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent">
+        <span class="block mb-4 bg-gradient-to-r from-emerald-900 to-green-100 bg-clip-text text-transparent">
           Find It Fast, Buy It Now
         </span>
-        <span class="block text-3xl md:text-5xl font-semibold text-emerald-100">
+        <span class="block text-3xl md:text-5xl font-semibold text-white">
         Stop Running from Store to Store – Find What You Need Instantly!
         </span>
       </h1>
@@ -40,7 +40,7 @@ Say goodbye to endless store-hopping—find exactly what's available near you ri
       {/* Animated CTA Section */}
       <div class="cta-animate opacity-0 transform">
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
-          <input
+          <input id="waitlist"
             type="email"
             placeholder="Your email address"
             class="w-full px-6 py-4 rounded-xl border-2 border-green-100/20 bg-white/10 backdrop-blur-sm text-white placeholder-green-100/60 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
