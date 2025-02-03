@@ -1,13 +1,13 @@
 ---
 import Image from "astro/components/Image.astro";
-import { Instagram, Linkedin, TwitterIcon } from "lucide-react";
+import { Facebook, Instagram, Linkedin,  TwitterIcon } from "lucide-react";
 
 const FindItBuyItLogo = "https://mirrorful-production.s3.us-west-1.amazonaws.com/patterns/files/73c20899-7f4e-41bb-a857-8ee8012107dd/FindItBuyItLogo.png"
 
 ---
 
    <footer class="bg-white border-t border-gray-200 py-12">
-          <div class="max-w-[1440px] mx-auto px-4">
+          <div class="max-w-[1280px] mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
                 <Image src={FindItBuyItLogo} alt="FindItBuyIt Logo"   width="132" height="132" class="mb-4" />
@@ -60,6 +60,14 @@ const FindItBuyItLogo = "https://mirrorful-production.s3.us-west-1.amazonaws.com
           class="text-gray-600 hover:text-green-600"
         >
           <TwitterIcon className="w-6 h-6" />
+        </a>
+        <a
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-600 hover:text-green-600"
+        >
+          <Facebook className="w-6 h-6" />
         </a>
         <a
           href="https://www.linkedin.com/"

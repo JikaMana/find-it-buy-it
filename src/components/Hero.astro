@@ -1,7 +1,7 @@
 ---
 import { ArrowRight } from "lucide-react";
-import heroBanner from "../assets/herobanner.webp"; 
-import heroImage from "../assets/heroImage.webp"; //second background option
+import heroBanner from "../assets/herobanner.png"; 
+import heroImage from "../assets/heroImage.png"; //second background option
 import "./Hero.css"
 
 ---
@@ -26,7 +26,7 @@ import "./Hero.css"
   <div class="max-w-7xl mx-auto px-4 relative z-10">
     <div class="text-center space-y-8">
       <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-6">
-        <span class="block mb-4 bg-gradient-to-r from-green-800 to-green-100 bg-clip-text text-transparent">
+        <span class="block mb-2 sm:mb-4 bg-gradient-to-r from-green-800 to-green-100 bg-clip-text text-transparent">
           Find It Fast, Buy It Now
         </span>
         <span class="block text-xl sm:text-3xl md:text-5xl font-semibold text-white">
@@ -53,7 +53,7 @@ import "./Hero.css"
   </div>
 
   {/* Scrolling Indicator */}
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+  <div class="absolute bottom-8 animate-bounce">
     <div class="w-8 h-14 rounded-3xl border-2 border-emerald-100 flex justify-center">
       <div class="w-1 h-3 bg-emerald-100 rounded-full mt-2"></div>
     </div>
