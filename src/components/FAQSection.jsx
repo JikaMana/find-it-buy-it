@@ -1,35 +1,35 @@
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { useState } from 'react'
+import { ChevronDown } from 'lucide-react'
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null)
 
   const faqs = [
     {
-      question: "How does FindItBuyIt work?",
+      question: 'How does FindItBuyIt work?',
       answer:
         "FindItBuyIt is a smart shopping assistant that helps you find products in nearby stores without the hassle of walking from shop to shop. Simply search for the item you need, and we'll instantly check its availability in various stores. This saves you time, energy, and money while ensuring you always find the best deals quickly.",
     },
     {
-      question: "Is it free to use?",
+      question: 'Is it free to use?',
       answer:
-        "Yes! FindItBuyIt is free for all shoppers to browse and check product availability. However, we also offer premium features that enhance your shopping experience, such as instant restock alerts, Multi-Language search, In-built price Calculator and many more. These premium services require a small fee to unlock all at once, but basic usage remains free.",
+        'Yes! FindItBuyIt is free for all shoppers to browse and check product availability. However, we also offer premium features that enhance your shopping experience, such as instant restock alerts, Multi-Language search, In-built price Calculator and many more. These premium services require a small fee to unlock all at once, but basic usage remains free.',
     },
     {
-      question: "What states does FindItBuyIt operate in?",
+      question: 'What states does FindItBuyIt operate in?',
       answer:
-        "Currently, FindItBuyIt operates exclusively in Rivers State. We are actively working on expanding to more locations in the near future. Stay tuned for updates, and if you’d like us to launch in your area, let us know!",
+        'Currently, FindItBuyIt operates exclusively in Rivers State. We are actively working on expanding to more locations in the near future. Stay tuned for updates, and if you’d like us to launch in your area, let us know!',
     },
     {
-      question: "Which stores are supported?",
+      question: 'Which stores are supported?',
       answer:
-        "FindItBuyIt partners with a wide range of stores, especially large retailers, ensuring that you have access to the best product availability. We are continuously adding more stores to our network, so you always have the most up-to-date options when shopping.",
+        'FindItBuyIt partners with a wide range of stores, especially large retailers, ensuring that you have access to the best product availability. We are continuously adding more stores to our network, so you always have the most up-to-date options when shopping.',
     },
-  ];
+  ]
 
   const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    setOpenIndex(openIndex === index ? null : index)
+  }
 
   return (
     <div className="space-y-4">
@@ -42,19 +42,19 @@ export default function FAQSection() {
             <span className="font-semibold">{faq.question}</span>
             <ChevronDown
               className={`w-5 h-5 text-gray-500 transition-transform ${
-                openIndex === index ? "rotate-180" : ""
+                openIndex === index ? 'rotate-180' : ''
               }`}
             />
           </button>
 
           <p
             className={`text-gray-700 transition-all ease-[cubic-bezier(.4,0,.2,1)] duration-300 overflow-hidden
-        ${openIndex === index ? "mt-4 opacity-100" : "max-h-0 opacity-0"}`}
+        ${openIndex === index ? 'mt-4 opacity-100' : 'max-h-0 opacity-0'}`}
           >
             {faq.answer}
           </p>
         </div>
       ))}
     </div>
-  );
+  )
 }

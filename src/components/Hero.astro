@@ -6,15 +6,10 @@ import "./Hero.css"
 
 ---
 
-
 <section class="relative bg-gradient-to-br from-green-700 to-emerald-900 min-h-[calc(100vh-72px)] flex items-center justify-center overflow-hidden" id="hero">
   <div class="absolute inset-0 z-0">
     <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-    <!-- <img 
-    src={heroImage.src}
-      alt="Modern shopping experience" 
-      class="w-full h-full object-cover object-[center_30%] transition-transform duration-1000 ease-out hover:scale-105" 
-    /> -->
+ 
     <img 
     src={heroBanner.src}
       alt="Modern shopping experience" 
@@ -25,8 +20,8 @@ import "./Hero.css"
 
   <div class="max-w-7xl mx-auto px-4 relative z-10">
     <div class="text-center space-y-8">
-      <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-6">
-        <span class="block mb-2 sm:mb-4 bg-gradient-to-r from-green-800 to-green-100 bg-clip-text text-transparent">
+      <h1 class=" font-extrabold text-white mb-6">
+        <span class="text-3xl sm:text-5xl md:text-7xl xl:text-[5.75rem] block mb-2 sm:mb-4 bg-gradient-to-r from-green-800 to-green-100 bg-clip-text text-transparent">
           Find It Fast, Buy It Now
         </span>
         <span class="block text-xl sm:text-3xl md:text-5xl font-semibold text-white">
@@ -38,7 +33,7 @@ import "./Hero.css"
           id="waitlist"
           type="email"
           placeholder="Your email address"
-          class="w-full px-6 py-4 rounded-xl border-2 border-green-100/20 bg-white/10 backdrop-blur-sm text-white placeholder-green-100/60 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
+          class="w-full px-6 py-4 rounded-xl border-2 border-green-100/20 bg-white/10 text-white placeholder-green-100/60 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition-all"
         />
         <button class="w-full max-w-max flex items-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-xl transition-all transform hover:scale-105 hover:shadow-lg">
           Get Early Access
@@ -54,10 +49,8 @@ import "./Hero.css"
 
   {/* Scrolling Indicator */}
   <div class="absolute bottom-8 animate-bounce">
-    <div class="w-8 h-14 rounded-3xl border-2 border-emerald-100 flex justify-center">
-      <div class="w-1 h-3 bg-emerald-100 rounded-full mt-2"></div>
+    <div class="w-8 h-14 rounded-3xl border-2 border-green-600 flex justify-center">
+      <div class="w-1 h-3 bg-green-600 rounded-full mt-2"></div>
     </div>
   </div>
-
-
 </section>
