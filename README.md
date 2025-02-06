@@ -1,48 +1,108 @@
-# Astro Starter Kit: Basics
+# FindItBuyIt Landing Page
 
-```sh
-npm create astro@latest -- --template basics
-```
+Welcome to the repository for the **FindItBuyIt** landing page—a modern, fast, and smart shopping assistant designed to help users find products quickly and effortlessly.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Overview
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+**FindItBuyIt** is a smart shopping assistant that allows users to search for products and instantly check their availability across multiple stores. No more running from store to store—our landing page offers an intuitive interface that highlights the key benefits of the service:
 
-## 🚀 Project Structure
+- **Find It Fast, Buy It Now**  
+  Discover product availability instantly with a simple search.
+- **Save Time & Money**  
+  Compare prices and get real‑time inventory updates.
+- **Shop Smarter**  
+  Receive discount alerts and access premium features to enhance your shopping experience.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── FindItBuyItLogo.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Key Features
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### Core Functionality
 
-## 🧞 Commands
+- **Search:**  
+  Type in the product you need, and our system checks nearby stores for stock.
+- **Find:**  
+  View real-time availability, directions, and prices from partner retailers.
+- **Buy:**  
+  Get all the details you need—store navigation, price comparison, and delivery options.
 
-All commands are run from the root of the project, from a terminal:
+### Powerful & Premium Features
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- **Store Navigation:**  
+  Integrated maps and directions for quick access.
+- **Price Comparison:**  
+  Instantly compare deals across multiple stores.
+- **Discount Deals Alert:**  
+  Get notified when your favorite stores offer discounts.
+- **Mobile App:**  
+  Access the service on the go via our dedicated mobile application.
+- **Real-Time Alerts (Premium):**  
+  Receive instant notifications when items are restocked.
+- **In-Built Price Calculator (Premium):**  
+  Plan your purchase with our dynamic calculator.
+- **Multi-Language Search (Premium):**  
+  Search products in Hausa, Yoruba, Igbo, Pidgin, and more.
+- **Favourite Stores (Premium):**  
+  Easily bookmark and revisit your preferred retailers.
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Statistics & Impact
+
+- **20+ Partner Stores**
+- **1000+ Daily Users**
+- **24/7 Service Availability**
+- **98% Customer Satisfaction**
+
+---
+
+## Getting Started
+
+Since this landing page is deployed as a static site (for example, via Netlify), you can follow these steps to run it locally:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/finditbuyit-landing-page.git
+   cd finditbuyit-landing-page
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## Contact
+
+For any questions, suggestions, or partnership inquiries, please contact us at:
+
+- **Email:** [hello@finditbuyit.com](mailto:hello@finditbuyit.com)
+- **Phone:** +234 (0) 901 996 7427
+
+## Legal
+
+For further details, please review our [Privacy Policy](#) and [Terms of Service](#).
+
+## Social Media
+
+Stay connected with us:
+
+- [Twitter](#)
+- [Facebook](#)
+- [LinkedIn](#)
+- [Instagram](#)
+
+---
+
+_© 2025 FindItBuyIt. All rights reserved._
