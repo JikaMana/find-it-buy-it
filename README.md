@@ -30,31 +30,14 @@ Welcome to the repository for the **FindItBuyIt** landing page—a modern, fast,
 
 ### Powerful Features
 
-- **Store Navigation:**  
-  Integrated maps and directions for quick access.
-- **Price Comparison:**  
-  Instantly compare deals across multiple stores.
-- **Discount Deals Alert:**  
-  Get notified when your favorite stores offer discounts.
-- **Mobile App:**  
-  Access the service on the go via our dedicated mobile application.
-- **Real-Time Alerts:**  
-  Receive instant notifications when items are restocked.
-- **In-Built Price Calculator:**  
-  Plan your purchase with our dynamic calculator.
-- **Multi-Language Search:**  
-  Search products in Hausa, Yoruba, Igbo, Pidgin, and more.
-- **Favourite Stores:**  
-  Easily bookmark and revisit your preferred retailers.
-
----
-
-## Statistics & Impact
-
-- **20+ Partner Stores**
-- **1000+ Daily Users**
-- **24/7 Service Availability**
-- **98% Customer Satisfaction**
+- **Store Navigation:** Integrated maps and directions for quick access.
+- **Price Comparison:** Instantly compare deals across multiple stores.
+- **Discount Deals Alert:** Get notified when your favorite stores offer discounts.
+- **Mobile App:** Access the service on the go via our dedicated mobile application.
+- **Real-Time Alerts:** Receive instant notifications when items are restocked.
+- **In-Built Price Calculator:** Plan your purchase with our dynamic calculator.
+- **Multi-Language Search:** Search products in Hausa, Yoruba, Igbo, Pidgin, and more.
+- **Favourite Stores:** Easily bookmark and revisit your preferred retailers.
 
 ---
 
@@ -90,10 +73,6 @@ For any questions, suggestions, or partnership inquiries, please contact us at:
 - **Email:** [hello@finditbuyit.com](mailto:hello@finditbuyit.com)
 - **Phone:** +234 (0) 901 996 7427
 
-## Legal
-
-For further details, please review our [Privacy Policy](#) and [Terms of Service](#).
-
 ## Social Media
 
 Stay connected with us:
@@ -104,5 +83,9 @@ Stay connected with us:
 - [Instagram](#)
 
 ---
+
+## Legal
+
+For further details, please review our [Privacy Policy](#) and [Terms of Service](#).
 
 _© 2025 FindItBuyIt. All rights reserved._
