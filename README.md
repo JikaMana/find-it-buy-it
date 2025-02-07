@@ -28,7 +28,7 @@ Welcome to the repository for the **FindItBuyIt** landing page—a modern, fast,
 - **Buy:**  
   Get all the details you need—store navigation, price comparison, and delivery options.
 
-### Powerful & Premium Features
+### Powerful Features
 
 - **Store Navigation:**  
   Integrated maps and directions for quick access.
@@ -38,13 +38,13 @@ Welcome to the repository for the **FindItBuyIt** landing page—a modern, fast,
   Get notified when your favorite stores offer discounts.
 - **Mobile App:**  
   Access the service on the go via our dedicated mobile application.
-- **Real-Time Alerts (Premium):**  
+- **Real-Time Alerts:**  
   Receive instant notifications when items are restocked.
-- **In-Built Price Calculator (Premium):**  
+- **In-Built Price Calculator:**  
   Plan your purchase with our dynamic calculator.
-- **Multi-Language Search (Premium):**  
+- **Multi-Language Search:**  
   Search products in Hausa, Yoruba, Igbo, Pidgin, and more.
-- **Favourite Stores (Premium):**  
+- **Favourite Stores:**  
   Easily bookmark and revisit your preferred retailers.
 
 ---
